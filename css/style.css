@@ -1,0 +1,114 @@
+/**********   TAG STYLES  ********************/
+a {
+    color: #FED2AA;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited {
+    color: none;
+}
+a:hover {
+    color: #8FE3CF;
+    text-decoration: none;
+}
+body {
+    background-color: black;
+    color: #8FE3CF;
+    margin: 0;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35pt;
+    font-weight: 100;
+}
+
+/**********   CLASS STYLES  *****************/
+.copywrite {
+    margin: 20px 0 0 0;
+}
+.footer {
+    background-color: #012146;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+.link-bar {
+    background: #012146;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 30px;
+    margin: 0;
+    padding: 10px 0 0 70%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+}
+.section {
+    height: 1000px;
+    margin: 0;
+    padding: 20vh 0 0 0;
+    text-align: center;
+    width: 100%;
+    background-color: red;
+}
+.social-link {
+    color: #12539c;
+    margin: 20px;
+    font-size: 1.5em;
+}
+.tile {
+    background-color: red;
+    border-radius: 10%;
+    box-shadow: 3px 2px 6px #8FE3CF;
+    height: 200px;
+    margin: 75px auto 10px auto;
+    text-align: center;
+    width: 300px;
+}
+.tile:hover {
+    box-shadow: 6px 4px 10px #8FE3CF;
+}
+.tile-box {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 20%;
+}
+.top-link {
+    margin: 0 50px 0 0;
+}
+
+/**********   ID STYLES  *****************/
+
+#title {
+    font-size: 50pt;
+}
+
+
+#about-section {
+    background-color: #256D85;
+}
+#glamping-section {
+    background-color: #002B5B;
+}
+#activities-section {
+    background-color: #2B4865;
+}
+#contact-section {
+    background-color: #256D85;
+}
+#contact-box {
+    background-color: #408faa;
+    padding: 10px 0 50px 40px;
+    margin: 100px 30vw 0 30vw;
+}
+#about-box {
+    width: 70vw; 
+    height: 500px; 
+    background-color: #4f8a9e; 
+    margin: 0 0 0 15vw; 
+    border-radius: 20%;
+    box-shadow: 2px 2px 3px;
+    padding: 0 0 0 50px;
+}
