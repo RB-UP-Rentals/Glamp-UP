@@ -14,9 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <style>
-        .carousel-image {
-            height: 500px;
-        }
+        /* .carousel-image {
+            height: 35rem;
+        } */
         #forest-tile {
             background-image: url("img/forest-tile.jpg");
         }
@@ -26,19 +26,13 @@
         #aurora-tile {
             background-image: url("img/aurora_tile.jpg");
         }
-        #title-section {
-            background-color: #2B4865;
-            background-image: url("img/treeline.png");
-            background-repeat: no-repeat;
-            background-position: bottom;
-            height: 100vh;
-            padding: 35vh 0 0 0;
-        }
 
 
     </style>
 </head>
 <body>
+
+    <!-- Bootstrap Nav Bar  -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#title-section">Glamp UP</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,12 +57,18 @@
             </ul>
         </div>
     </nav>
-    <div class="section" id="title-section">
+
+    <!-- Fixed background treeline image -->
+    <div class="treeline-background">
+        <img src="img/treeline.png" class="treeline-image">
+    </div>
+
+    <div class="container-fluid section" id="title-section">
         <h1 id="title">Glamp U.P.</h1>
         <h2><em>Elevating Camping Experiences</em></h2>
         <h3>Little Lake, Michigan </h3>
     </div>
-    <div class="section" id="about-section">
+    <div class="container-fluid section" id="about-section">
         <h1>About</h1>
         <div id="about-box">
             <div style="padding: 100px 20px 0 0">
@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    <div class="section" id="glamping-section">
+    <div class="container-fluid section" id="glamping-section">
         <h1>Glamping</h1>
         <div class="row">
             <div class="col-lg-4">
@@ -96,7 +96,7 @@
             </div>
         </div>
     </div>
-    <div class="section" id="activities-section">
+    <div class="container-fluid section" id="activities-section">
         <h1>Outdoor Activities</h1>
 
         <!-- Copy pasted boostrap carousel -->
@@ -141,32 +141,62 @@
         <!----------------------------------------->
 
     </div>
-    <div class="section" id="contact-section">
+    <div class="container-fluid section" id="contact-section">
         <h1>Contact Us!</h1>
         <div id="contact-box">
             <h2>Sign up for Updates!</h2>
 
-            <div id="contact-form">
+            <form class="" action="mailto:rb.up.rentals@gmail.com" method="post" enctype="text/plain">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label>First Name: </label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" name="first_name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label>Last Name: </label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" name="last_name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label>Email:</label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type='submit' name="">
+                    </div>
+                </div>
+            </form>
+
+            <!-- <div id="contact-form">
                 <form class="" action="mailto:rb.up.rentals@gmail.com" method="post" enctype="text/plain">
-                    <table>
-                    <tr>
-                            <td><label>First Name: </label></td>
-                            <td><input type="text" name="first_name"></td>
-                    </tr>
-                    <tr>
-                            <td><label>Last Name: </label></td>
-                            <td><input type="text" name="last_name"></td>
-                    </tr>
-                    <tr>
-                            <td><label>Email:</label></td>
-                            <td><input type="email" name="email"></td>
-                        </tr>
-                        <tr>
-                            <td><input type='submit' name=""></td>
-                    </tr>
-                    </table>          
+                    <div class="row">
+                            <div class="col-lg-6"><label>First Name: </label></div>
+                            <tdiv class="col-lg-6"><input type="text" name="first_name"></div>
+                    </div>
+                    <div class="row">
+                            <div class="col-lg-6"><label>Last Name: </label></div>
+                            <tdiv class="col-lg-6"><input type="text" name="last_name"></div>
+                    </div>
+                    <div class="row">
+                            <div class="col-lg-6"><label>Email:</label></div>
+                            <div class="col-lg-6"><input type="email" name="email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg"><input type='submit' name=""></div>
+                    </div>         
                 </form>
-            </div>
+            </div> -->
         </div>
 
         <br>
