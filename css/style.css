@@ -8,7 +8,7 @@ a:visited {
     color: none;
 }
 a:hover {
-    color: #8FE3CF;
+    color: #eea764;
     text-decoration: none;
 }
 body {
@@ -18,8 +18,19 @@ body {
 }
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 35pt;
-    font-weight: 100;
+    font-size: 8rem;
+    font-weight: 400;
+}
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    font-weight: 200; 
+    margin: 2% 1% 5%;
+}
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 100;  
 }
 
 /**********   CLASS STYLES  *****************/
@@ -46,10 +57,10 @@ h1 {
 
 }
 .navbar {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .section {
-    padding: 15% 0;
+    padding: 1% 0 10%;
 }
 
 .social-link {
@@ -57,6 +68,8 @@ h1 {
     margin: 20px;
     font-size: 1.5em;
 }
+
+/* Background tree-line */
 .treeline-background {
     background-color: #2B4865;
     height: 100vh;
@@ -71,34 +84,43 @@ h1 {
 
 }
 
+/* Glamping Tiles */
 .tile {
     background-color: red;
     border-radius: 10%;
     box-shadow: 3px 2px 6px #8FE3CF;
     height: 200px;
-    margin: 75px auto 10px auto;
+    margin: 5% auto;
     text-align: center;
     width: 300px;
+    color: black;
+    font-size: 2em;
+    font-weight: 400;
 }
 .tile:hover {
-    box-shadow: 6px 4px 10px #8FE3CF;
+    box-shadow: 6px 4px 10px #FED2AA;
 }
 .tile-box {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-left: 20%;
+    border: 0px solid;
+    width: 70%;
+    margin: 5% auto;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 5% 5%;
+    box-shadow: 0px 0px 0px #8FE3CF;
 }
-.top-link {
-    margin: 0 50px 0 0;
+.tile-box:hover {
+    color: #FED2AA;
+    box-shadow: 0px 0px 15px #FED2AA;
+}
+.tile-title {
+    padding: 0 auto;
+    text-align: center;
+    font-size: 3rem;
 }
 
 /**********   ID STYLES  *****************/
-
-#title {
-    font-size: 50pt;
-}
 #title-section {
-    /* background-color: #2B4865; */
     text-align: center;
     padding: 35vh 0 0 0;
     height: 100vh;
@@ -107,27 +129,23 @@ h1 {
  #about-section {
     background-color: #256D85;
 }
-/*
-#glamping-section {
-    background-color: #002B5B;
-}
-*/
+
 #activities-section {
     background-color: #256D85;
 }
+
 #contact-section {
     text-align: center;
 } 
+
 #contact-box {
     background-color: #408faa;
     padding: 10px 30px 50px 40px;
     width: 30%;
     margin: 0 auto;
-
-
-
     text-align: center;
 }
+
 #about-box {
     width: 70vw; 
     height: 500px; 
@@ -136,6 +154,4 @@ h1 {
     border-radius: 20%;
     box-shadow: 2px 2px 3px;
     padding: 0 0 0 50px;
-    /* font-size: 1.75em;
-    line-height: 1.5; */
 }
