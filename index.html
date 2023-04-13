@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
+      <!-- Add Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/c735c5ed49.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
  
@@ -57,15 +60,15 @@
     </div>
     <div class="container-fluid section" id="about-section">
         <h2>About</h2>
-        <div id="about-box">
-            <div style="padding: 100px 20px 0 0">
+        <div class="text-box" id="about-box">
+            <h4>
                 Glamping U.P. was formed in December 2022 by two Medical Laboratory Scientists, Brooke and Robert, and one lab mix named <a href="https://rb-up-rentals.github.io/copper" target="_blank">Copper</a>. After traveling the U.S. coast-to-coast working contracts at various hospitals, 
             we chose Little Lake, MI as our place to call home, choosing it for its abundance of nature, clear night skies, and mountain biking trails in nearby 
-            <a href="https://www.travelmarquette.com/">Marquette, MI.</a> We Currently own forty acres of wooded land in Little Lake, MI with access to bordering state land 
+            <a href="https://www.travelmarquette.com/" target="_blank">Marquette, MI.</a> We Currently own forty acres of wooded land in Little Lake, MI with access to bordering state land 
             and beachfront on a small private lake, and plan to be fully operational by late spring 2024.
-            </div>
+            </h4>
         </div>
-    </div>
+    </div> 
     <div class="container-fluid section" id="glamping-section">
         <h2>Glamping</h2>
         <div class="row">
@@ -75,10 +78,9 @@
                     <div class="tile" id="cabin-tile">
                         <img src="img/cabin-tile.jpg" class="tile-image">
                     </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </div>
+                    <h4>
+                        Enjoy this spacious 380 sqft cabin that sits right on the lake. Amenities include a queen size bed, solar-powered lights, and a propane heater and stove.
+                    </h4>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -87,10 +89,9 @@
                     <div  class="tile" id="dome-tile" >
                         <img src="img/dome-tile.jpg" class="tile-image">
                     </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </div>
+                    <h4>
+                        Stay in one of our 288 sqft glamping domes. Stargaze through the large skylight and wake up to beautiful nature views out the expansive bay window. - Coming 2024
+                    </h4>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -99,10 +100,9 @@
                     <div class="tile" id="tent-tile">
                         <img src="img/tent-tile.jpg" class="tile-image">
                     </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </div>
+                    <h4>
+                        Not your Grandpa's tent. These spacious tents feature a queen size bed, countertops, and comfy chairs to relax in after a day of mountainbiking or 4-wheeling. Come see how comfortable camping can be. - Coming 2024
+                    </h4>
                 </div>
             </div>
         </div>
@@ -117,15 +117,17 @@
               <button type="button" data-bs-target="#activities-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#activities-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+
             <div class="carousel-inner">
+                
               <div class="carousel-item active activity-slide">
                 <img src="img/aurora borialis_light.jpg" class="d-block w-100 activities-image" alt="...">
-                
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Stargazing</h5>
                   <p>Enjoy beautiful views of the night sky and catch a glimpse of the Aurora Borealis</p>
                 </div>
               </div>
+
               <div class="carousel-item activity-slide">
                 <img src="img/dense trees.jpg" class="d-block w-100 activities-image" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -133,6 +135,7 @@
                   <p>Thrity minutes from the mountainbiking trails of Marquette, MI and miles of hiking trails beginning and ending right at your campsite.</p>
                 </div>
               </div>
+
               <div class="carousel-item activity-slide">
                 <img src="img/calm lake.jpg" class="d-block w-100 activities-image" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -140,9 +143,6 @@
                   <p>A beautiful beach on a private ten acre lake gives access to peaceful kayaking and SUPing.</p>
                 </div>
               </div>
-              <!-- <div class="carousel-item active activity-slide">
-                <img src="img/aurora borialis_light.jpg" class="d-block w-100" alt="...">
-              </div> -->
 
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#activities-carousel" data-bs-slide="prev">
@@ -158,9 +158,20 @@
 
     </div>
     <div class="container-fluid section" id="contact-section">
-        <h2>Contact Us!</h2>
-        <div id="contact-box">
-            <h4>Sign up for Updates!</h4>
+        <h2>Stay in Touch!</h2>
+        <div id="contact-box" class="text-box">
+            <h4>
+                Follow Us:
+            </h4>
+            <div class="row">
+                <div class="col-md-6 social-link">
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100091467957794&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-square-facebook fa-4x"></i></a>
+                </div>
+                <div class="col-md-6 social-link">
+                    <a class="social-link" href="https://www.instagram.com/glamp.up" target="_blank"><i class="fa-brands fa-instagram fa-4x"></i></a>
+                </div>
+            </div>
+            <!-- <h4>Sign up for Updates!</h4>
 
             <form class="" action="mailto:rb.up.rentals@gmail.com" method="post" enctype="text/plain">
                 <div class="row">
@@ -192,7 +203,7 @@
                         <input type='submit' name="">
                     </div>
                 </div>
-            </form>
+            </form> -->
         </div>
 
         <br>
@@ -202,12 +213,7 @@
         </p>
     </div>
     <div class="footer">
-        <a class="social-link" href="">Twitter</a>
-        <a class="social-link" href="">Facebook</a>
-        <a class="social-link" href="">Instagram</a>
         <div class="copywrite">© R&B UP Rentals, LLC 2023</div>
     </div>
-
-
 </body>
 </html>
