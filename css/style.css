@@ -1,6 +1,6 @@
-@media screen and (max-width: 480px) {
-    nav.navbar {
-        font-size: 4rem;
+@media screen and (max-width: 600px) {
+    a.nav-link {
+        font-size: 3rem;
     }
 }
 
@@ -21,6 +21,7 @@ body {
     background-color: black;
     color: #8FE3CF;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 h1 {
     font-family: 'Dancing Script', cursive;
@@ -31,44 +32,29 @@ h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 5rem;
     font-weight: 200; 
-    margin: 2% 1% 5%;
+    margin: 3% auto;
+    /* margin: 2% 1% 5%; */
+    width: 90%;
 }
 h3 {
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    font-weight: 100;  
+    font-size: 3.5rem;
+    font-weight: 900;
 }
 h4 {
     font-size: 1.5rem;
     line-height: 1.5;
 }
 
-/**********   CLASS STYLES  *****************/
-.copywrite {
-    margin: 20px 0 0 0;
-}
-.footer {
-    background-color: #012146;
-    height: 10vh;
+hr {
+    width: 90%;
+    border-width: 3px;
     margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
 }
-.link-bar {
-    background: #012146;
-    display: flex;
-    flex-wrap: nowrap;
-    height: 30px;
-    margin: 0;
-    padding: 10px 0 0 70%;
-    position: fixed;
-    top: 0;
-    width: 100vw;
 
-}
-.navbar {
-    font-size: 1.5rem;
-}
+/**********   CLASS STYLES  *****************/
+
+
 .section {
     padding: 1% 0 10%;
 }
@@ -87,13 +73,60 @@ h4 {
     width: 100%;
 
 }
+
+/* navbar */
+
+.navbar {
+    font-size: 1.5rem;
+}
+
+/* title section */
+
+#title-section {
+    text-align: center;
+    padding: 35vh 0 0 0;
+    height: 100vh;
+}
+
+/* About section */
+
+#about-section {
+    background-color: #256D85;
+}
+.about-row {
+    width: 90%;
+    display: inline-block;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.about-icon {
+    width: 30%;
+    float: left;
+    margin: 0 50px 10px 0;
+}
+
+#about-box {
+    width: 90%; 
+    height: 100%;
+    padding: 5% 15%;
+    text-justify: inter-word; 
+    font-size: 2rem;
+    line-height: 2;
+}
+#bonfire {
+    float: left;
+}
+#camp-icon {
+    float: right;
+}
  
 /* Glamping Tiles */
 .tile {
-    height: 200px;
+    height: 250px;
     margin: 5% auto;
     text-align: center;
-    width: 300px;
+    width: 325px;
 }
 .tile-box {
     border: 0px solid;
@@ -123,32 +156,27 @@ h4 {
     box-shadow: 6px 4px 10px #FED2AA;
 }
 
-/* Outdoor activities */
+/* Outdoor activities and Events */
+
+#activities-section {
+    background-color: #256D85;
+    padding: 20% auto;
+}
 
 .activity-slide {
     height: 500px;
     padding: 0 5%;
 }
 
-
-/**********   ID STYLES  *****************/
-#title-section {
-    text-align: center;
-    padding: 35vh 0 0 0;
-    height: 100vh;
+.events {
+    padding-top: 5%;
 }
 
- #about-section {
-    background-color: #256D85;
-}
-
-#activities-section {
-    background-color: #256D85;
-    padding: 20% auto;
-}
 .activities-image {
     height: 100%;
 }
+
+/* contact section */
 
 #contact-section {
     text-align: center;
@@ -170,14 +198,21 @@ h4 {
     text-align: center;
 }
 
-#about-box {
-    width: 60%; 
-    height: 100%;
-    text-justify: inter-word; 
-}
-
 .social-link {
     color: #0c3769;
     padding: 10%;
     font-size: 1.5em;
+}
+
+/* footer */
+
+.copywrite {
+    margin: 20px 0 0 0;
+}
+.footer {
+    background-color: #012146;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
 }
