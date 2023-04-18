@@ -1,218 +1,244 @@
-@media screen and (max-width: 1000px) {
-    a.nav-link {
-        font-size: 3rem;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glamp UP - Elevating Camping Experiences</title>
+    
+    <!-- Install BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="aurora.ico">
 
-/**********   TAG STYLES  ********************/
-a {
-    color: #FED2AA;
-    text-decoration: none;
-    font-weight: bold;
-}
-a:visited {
-    color: none;
-}
-a:hover {
-    color: #eea764;
-    text-decoration: none;
-}
-body {
-    background-color: black;
-    color: #8FE3CF;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 8rem;
-    font-weight: 400;
-}
-h2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 5rem;
-    font-weight: 200; 
-    margin: 3% auto;
-    /* margin: 2% 1% 5%; */
-    width: 90%;
-}
-h3 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
-    font-weight: 900;
-}
-h4 {
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
+    <!-- Install google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
 
-hr {
-    width: 90%;
-    border-width: 3px;
-    margin: 0 auto;
-}
+      <!-- Add Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/c735c5ed49.js" crossorigin="anonymous"></script>
 
-/**********   CLASS STYLES  *****************/
-
-
-.section {
-    padding: 1% 0 10%;
-}
-
-/* Background tree-line */
-.treeline-background {
-    background-color: #2B4865;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: -1;
-    display: flex;
-    align-items: flex-end;
-}
-.treeline-image {
-    width: 100%;
-
-}
-
-/* navbar */
-
-.navbar {
-    font-size: 1.5rem;
-}
-
-/* title section */
-
-#title-section {
-    text-align: center;
-    padding: 35vh 0 0 0;
-    height: 100vh;
-}
-
-/* About section */
-
-#about-section {
-    background-color: #256D85;
-}
-.about-row {
-    width: 90%;
-    display: inline-block;
-    margin: 50px auto;
-    text-align: left;
-}
-
-.about-icon {
-    width: 30%;
-    float: left;
-    margin: 0 50px 10px 0;
-}
-
-#about-box {
-    width: 90%; 
-    height: 100%;
-    padding: 5% 15%;
-    text-justify: inter-word; 
-    font-size: 2rem;
-    line-height: 2;
-}
-#bonfire {
-    float: left;
-}
-#camp-icon {
-    float: right;
-}
+</head>
+<body>
  
-/* Glamping Tiles */
-.tile {
-    height: 250px;
-    margin: 5% auto;
-    text-align: center;
-    width: 325px;
-}
-.tile-box {
-    border: 0px solid;
-    width: 70%;
-    margin: 5% auto;
-    text-align: justify;
-    text-justify: inter-word;
-    padding: 0 5% 5%;
-    box-shadow: 0px 0px 0px #8FE3CF;
-}
-.tile-box:hover {
-    color: #FED2AA;
-    box-shadow: 0px 0px 15px #FED2AA;
-}
-.tile-title {
-    padding: 0 auto;
-    text-align: center;
-    font-size: 3rem;
-} 
-.tile-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
-    box-shadow: 3px 2px 6px #8FE3CF;
-}
-.tile-image:hover {
-    box-shadow: 6px 4px 10px #FED2AA;
-}
+    <!-- Bootstrap Nav Bar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand brand-icon" href="#title-section">
+            <!-- <img src="img/logo.png" class="logo" alt="Glamp-UP logo"> -->
+            GLAMP UP
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#glamping-section">Glamping</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#activities-section">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events-section">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-/* Outdoor activities and Events */
+    <!-- Fixed background treeline image -->
+    <div class="treeline-background">
+        <!-- <img src="img/treeline.png" class="treeline-image"> -->
+    </div>
 
-#activities-section {
-    background-color: #256D85;
-    padding: 20% auto;
-}
+    <div class="container-fluid section" id="title-section">
+        <h1>Glamp U.P.</h1>
+        <h4><em>Elevating Camping Experiences</em></h4>
+        <h5>Little Lake, Michigan </h5>
+    </div>
+    <div class="container-fluid section" id="about-section">
+        <h2>About</h2>
+        <div class="text-box" id="about-box">
+            <div class="about-row">
+                <img class="about-icon" id="bonfire-icon" src="img/bonfire.png" alt="bonfire">
+                <h3>Who we are</h3>
+                <p class="about-text">    
+                    Glamp UP was formed in December 2022 by two Medical Laboratory Scientists, Brooke and Robert, and one lab mix named <a href="https://rb-up-rentals.github.io/copper" target="_blank">Copper</a>. After traveling the U.S. coast-to-coast working contracts at various hospitals, 
+                    we chose Little Lake, MI as our place to call home, choosing it for its abundance of nature, clear night skies, and mountain biking trails in nearby 
+                    <a href="https://www.travelmarquette.com/" target="_blank">Marquette, MI.</a>
+                </p>
+            </div>
 
-.activity-slide {
-    height: 500px;
-    padding: 0 5%;
-}
+            <div class="about-row">
+                <img class="about-icon" id="camp-icon" src="img/camping.png" alt="tent at night">
+                <h3>What we are</h3>
+                <p>
+                    We are currently building luxury glamping units on forty acres of wooded land in Little Lake, MI with access to bordering state land 
+                    and beachfront on a small private lake. Our focus is on sustainability and the enjoyment of nature withought compromising on comfort. 
+                    Our units will be fully powered by off-grid solar, and will feature composting toilets. Tentativley we will have our cabin and one 
+                    luxury tent available by the summer of 2023 and plan to be fully operational with and additional luxury tent and two geodesic domes
+                     by late spring 2024.
+                </p>
+            </div>
+        </div>
+    </div> 
+    <div class="container-fluid section" id="glamping-section">
+        <h2>Glamping</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="tile-box">
+                    <h3 class="tile-title">Cabin</h3>
+                    <div class="tile" id="cabin-tile">
+                        <img src="img/cabin-tile.jpg" class="tile-image">
+                    </div>
+                    <p class="tile-text">
+                        Enjoy this spacious 380 sqft cabin that sits right on the lake. Amenities include a queen size bed, solar-powered lights, and a propane heater and stove.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="tile-box">
+                    <h3 class="tile-title">Domes</h3>
+                    <div  class="tile" id="dome-tile" >
+                        <img src="img/dome-tile.jpg" class="tile-image">
+                    </div>
+                    <p class="tile-text">
+                        Stay in one of our 288 sqft glamping domes. Stargaze through the large skylight and wake up to beautiful nature views out the expansive bay window. - Coming 2024
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="tile-box">
+                    <h3 class="tile-title">Tents</h3>
+                    <div class="tile" id="tent-tile">
+                        <img src="img/tent-tile.jpg" class="tile-image">
+                    </div>
+                    <p class="tile-text">
+                        Not your typical tent. These spacious tents feature a queen size bed, countertops, and comfy chairs to relax in after a day of mountainbiking or 4-wheeling. Come see how comfortable camping can be. - Coming 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid section" id="activities-section">
+        <h2>Outdoor Activities</h2>
 
-.events {
-    padding-top: 5%;
-}
+        <!-- Copy pasted boostrap carousel -->
+        <div id="activities-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#activities-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#activities-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#activities-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
 
-.activities-image {
-    height: 100%;
-}
+            <div class="carousel-inner">
+                
+              <div class="carousel-item active activity-slide">
+                <img src="img/aurora borialis_light.jpg" class="d-block w-100 activities-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Stargazing</h5>
+                  <p>Enjoy beautiful views of the night sky and catch a glimpse of the Aurora Borealis</p>
+                </div>
+              </div>
 
-/* contact section */
+              <div class="carousel-item activity-slide">
+                <img src="img/dense trees.jpg" class="d-block w-100 activities-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Hiking and Mountainbiking</h5>
+                  <p>Thrity minutes from the mountainbiking trails of Marquette, MI and miles of hiking trails beginning and ending right at your campsite.</p>
+                </div>
+              </div>
 
-#contact-section {
-    text-align: center;
-} 
+              <div class="carousel-item activity-slide">
+                <img src="img/calm lake.jpg" class="d-block w-100 activities-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Kayaking and Standup Paddleboarding</h5>
+                  <p>A beautiful beach on a private ten acre lake gives access to peaceful kayaking and SUPing.</p>
+                </div>
+              </div>
 
-.text-box {
-    background-color: #4f8a9e; 
-    margin: 0  auto; 
-    border-radius: 20%;
-    box-shadow: 2px 2px 3px;
-    padding: 5%;
-}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#activities-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#activities-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!----------------------------------------->
 
-#contact-box {
-    background-color: #408faa;
-    padding: 4%;
-    width: 40%;
-    margin: 0 auto;
-    text-align: center;
-}
+        <div class="events" id="events-section" style="height: 700px;">
+            <hr>
+            <h2>Local Events</h2>
+        </div>
+    </div>
+    <div class="container-fluid section" id="contact-section">
+        <h2>Stay in Touch!</h2>
+        <div id="contact-box" class="text-box">
+            <h4>
+                Follow Us:
+            </h4>
+            <div class="row">
+                <div class="col-md-6 social-link">
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100091467957794&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-square-facebook fa-4x"></i></a>
+                </div>
+                <div class="col-md-6 social-link">
+                    <a class="social-link" href="https://www.instagram.com/glamp.up" target="_blank"><i class="fa-brands fa-instagram fa-4x"></i></a>
+                </div>
+            </div>
+            <!-- <h4>Sign up for Updates!</h4>
 
-.social-link {
-    color: #0c3769;
-    padding: 10%;
-    font-size: 1.5em;
-}
+            <form class="" action="mailto:rb.up.rentals@gmail.com" method="post" enctype="text/plain">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label>First Name: </label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" name="first_name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label>Last Name: </label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" name="last_name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label>Email:</label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type='submit' name="">
+                    </div>
+                </div>
+            </form> -->
+        </div>
 
-/* footer */
-
-.copywrite {
-    margin: 20px 0 0 0;
-}
-.footer {
-    background-color: #012146;
-    height: 10vh;
-    margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
-}
+        <br>
+        <br>
+        <p>
+           <h4>Email us at: <a href='mailto:rb.up.rentals@gmail.com'>RB.UP.Rentals@gmail.com</a></h4>
+        </p>
+    </div>
+    <div class="footer">
+        <div class="copywrite">© R&B UP Rentals, LLC 2023</div>
+    </div>
+</body>
+</html>
