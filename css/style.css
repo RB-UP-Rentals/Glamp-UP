@@ -92,6 +92,7 @@ hr {
 }
 .logo {
     height: 50px;
+    margin-left: 15px;
 }
 .navbar {
     font-size: 1.5rem;
