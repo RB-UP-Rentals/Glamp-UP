@@ -23,7 +23,7 @@
 <body>
  
     <!-- Bootstrap Nav Bar  -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-0">
         <a class="navbar-brand brand-icon" href="#title-section">
             <img src="img/logo.png" class="logo" alt="Glamp-UP logo">
         </a>
@@ -35,19 +35,19 @@
   
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-section">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#glamping-section">Glamping</a>
+                    <a class="nav-link" href="#glamping">Glamping</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#activities-section">Activities</a>
+                    <a class="nav-link" href="#activities">Activities</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#events-section">Events</a>
+                    <a class="nav-link" href="#events">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact-section">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -63,7 +63,7 @@
         <h4><em>Elevating Camping Experiences</em></h4>
         <h5>Little Lake, Michigan </h5>
     </div>
-    <div class="container-fluid section" id="about-section">
+    <div class="container-fluid section" id="about">
         <h2>About</h2>
         <div id="about-box">
             <div class="about-row">
@@ -88,7 +88,7 @@
             </div>
         </div>
     </div> 
-    <div class="container-fluid section" id="glamping-section">
+    <div class="container-fluid section" id="glamping">
         <h2>Glamping</h2>
         <div class="row">
             <div class="col-lg-4">
@@ -126,124 +126,254 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid section" id="activities-section">
+    <div class="container-fluid section" id="activities">
         <h2>Outdoor Activities</h2>
 
         <!-- Copy pasted boostrap carousel -->
-        <div id="activities-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="activity-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#activities-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#activities-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#activities-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#activity-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#activity-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#activity-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#activity-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#activity-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
-
             <div class="carousel-inner">
-                
-              <div class="carousel-item active activity-slide">
-                <img src="img/aurora borialis_light.jpg" class="d-block w-100 activities-image" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Stargazing</h5>
-                  <p>Enjoy beautiful views of the night sky and catch a glimpse of the Aurora Borealis</p>
+                <div class="carousel-item active">
+                    <img src="img/mountain-biking.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <div class="carousel-text">
+                        <h4>Mountain Biking</h4>
+                        <p>
+                            Thirty minutes from the mountainbiking trails of Marquette, Michigan.
+                        </p>
+                    </div>
                 </div>
-              </div>
-
-              <div class="carousel-item activity-slide">
-                <img src="img/dense trees.jpg" class="d-block w-100 activities-image" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Hiking and Mountainbiking</h5>
-                  <p>Thrity minutes from the mountainbiking trails of Marquette, MI and miles of hiking trails beginning and ending right at your campsite.</p>
+                <div class="carousel-item">
+                    <img src="img/calm lake.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <div class="carousel-text">
+                        <h4>Kayaking and SUPing</h4>
+                        <p>Cool off with a swim or relax with some kayaking and stand-up paddleboarding on ten acre Northwestern lake via our private beachfront access. Be sure not to miss the beautiful sunset 
+                            over the lake in the evening!</p>
+                    </div>
                 </div>
-              </div>
-
-              <div class="carousel-item activity-slide">
-                <img src="img/calm lake.jpg" class="d-block w-100 activities-image" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Kayaking and Standup Paddleboarding</h5>
-                  <p>A beautiful beach on a private ten acre lake gives access to peaceful kayaking and SUPing.</p>
+                <div class="carousel-item">
+                    <img src="img/dense trees.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <div class="carousel-text">
+                        <h4>Hiking</h4>
+                        <p>
+                            In addition to the beautiful hiking trails throughout the area, Glamp U.P. borders over 900 acres of stateland with miles of trails to explore starting
+                            right from your glamping unit. 
+                        </p>
+                    </div>
                 </div>
-              </div>
-
+                <div class="carousel-item">
+                    <img src="img/Northern Lights.jpeg" class="d-block w-100 carousel-image" alt="...">
+                    <div class="carousel-text">
+                        <h4>Skywatching</h4>
+                        <p>Expansive sky views and little light pollution make the Upper Peninsula the perfect
+                            place to view meteor showers or catch a glimpse of the Northern Lights.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pheasant back2.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <div class="carousel-text">
+                        <h4>Foraging</h4>
+                        <p>Explore the wonderful world of finding food. The surrounding forests are brimming with wild blueberries, 
+                            blackberries, raspberries, and fantastic fungi.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#activities-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#activity-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#activities-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#activity-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
         <!----------------------------------------->
     </div>
-    <div class="container-fluid section" id="events-section">
+    <div class="container-fluid section" id="events">
         <hr>
         <h2>Local Events</h2>
         <div class="event-box">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="event">
-                        EVENT 1
+                        <img src="img/moon-event-img.jpg" class="event-img" alt="...">
+                        <div class="event-text">
+                            Marquette Trails Fest
+                            <br>
+                            JUNE
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event">
-                        EVENT 2
+                        <div class="event-text">
+                            Hiawatha Music Festival
+                            <br>
+                            JULY
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event">
-                        EVENT 3
+                        <div class="event-text">
+                            Art on the Rocks
+                            <br>
+                            JULY
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event">
-                        EVENT 4
+                        <img src="img/meteor-event-img.jpg" class="event-img" alt="Metoor above trees">
+                        <div class="event-text">
+                            Delta Aquarids Meteor Shower
+                            <br>
+                            July 12 - August 13
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event">
-                        EVENT 5
+                        <img src="img/meteor-event-img.jpg" class="event-img" alt="Metoor above trees">
+                        <div class="event-text">
+                            Perseid Meteor Shower
+                            <br>
+                            JULY 17 - AUGUST 24
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event">
-                        EVENT 6
+                        <div class="event-text">
+                            Ore to Shore
+                            <br>
+                            AUGUST
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event">
-                        EVENT 7
+                        <img src="img/moon-event-img.jpg" class="event-img" alt="image of full moon">
+                        <div class="event-text">
+                            Super Blue Moon
+                            <br>
+                            AUGUST 31
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event">
-                        EVENT 8
+                        <div class="event-text">
+                            Marquette Fall Enduro
+                            <br>
+                            OCTOBER
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="event">
+                        <div class="event-text">
+                            UP200 Dryland Dash
+                            <br>
+                            OCTOBER
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="event">
+                        <div class="event-text">
+                            Solar Eclipse
+                            <br>
+                            OCTOBER 14
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="event">
+                        <img src="img/meteor-event-img.jpg" class="event-img" alt="Metoor above trees">
+                        <div class="event-text">
+                            Orionids Meteor Shower
+                            <br>
+                            OCTOBER 2 - NOVEMBER 7
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="event">
+                        <div class="event-text">
+                            Aurora Borealis
+                            <br>
+                            APRIL, OCTOBER, NOVEMBER
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-3 col-sm-6">
+                    <div class="event">
+                        <div class="event-text">
+                            Event Title
+                            <br>
+                            DATE
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="event">
+                        <div class="event-text">
+                            Event Title
+                            <br>
+                            DATE
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event odd-tile">
-                        EVENT 9
+                        <div class="event-text">
+                            Event Title
+                            <br>
+                            DATE
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event odd-tile">
-                        EVENT 10
+                        <div class="event-text">
+                            Event Title
+                            <br>
+                            DATE
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event odd-tile">
-                        EVENT 11
+                        <div class="event-text">
+                            Event Title
+                            <br>
+                            DATE
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="event odd-tile">
-                        EVENT 12
+                        <div class="event-text">
+                            Event Title
+                            <br>
+                            DATE
+                        </div>
                     </div>
-                </div>
+                </div> -->
+
             </div>
         </div>
     </div>
-    <div class="container-fluid section" id="contact-section">
+    <div class="container-fluid section" id="contact">
         <h2>Stay in Touch!</h2>
         <div id="contact-box" class="text-box">
             <h4>
