@@ -17,8 +17,11 @@
     div.carousel-text {
         padding: 1% 5%;
     }
-    div#contact {
+    #contact {
         height: 100vh;
+    }
+    #contact-box {
+    margin-top: 15%;
     }
     div.event {
         height: 400px;
