@@ -1,10 +1,9 @@
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     a.nav-link {
         font-size: 2.75rem;
     }
-
-    .logo {
-        height: 80px;
+    img.logo {
+        height: 75px;
     }
     p.tile-text {
         font-size: 2rem;
@@ -15,17 +14,15 @@
     img.treeline-image {
         height: 40%;
     }
-    .carousel-text {
+    div.carousel-text {
         padding: 1% 5%;
     }
-    #contact {
+    div#contact {
         height: 100vh;
     }
-    #contact-box {
-        margin: 400px 0;
-    }
-    .event {
+    div.event {
         height: 400px;
+
     }
 }
 
