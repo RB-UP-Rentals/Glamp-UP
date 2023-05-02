@@ -3,7 +3,7 @@
         font-size: 2.75rem;
     }
     img.logo {
-        height: 95px;
+        height: 105px;
     }
     p.tile-text {
         font-size: 2rem;
@@ -21,11 +21,13 @@
         height: 100vh;
     }
     div.contact-box {
-    margin-top: 300px;
+    margin-top: 425px;
     }
     div.event {
         height: 400px;
-
+    }
+    div.event-text {
+        font-size: 2.25rem;
     }
 }
 
