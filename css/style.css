@@ -10,7 +10,7 @@
         font-size: 2rem;
     }
     h2 {
-        margin-top: 7%;
+        margin-top: 7.5%;
     }
     img.treeline-image {
         height: 40%;
@@ -21,6 +21,8 @@
     #contact {
         height: 100vh;
     }
+    #contact-box {
+        margin: auto;
 }
 
 /**********   TAG STYLES  ********************/
