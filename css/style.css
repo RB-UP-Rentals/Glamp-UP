@@ -1,9 +1,9 @@
 @media (max-width: 1000px) {
     a.nav-link {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
     img.logo {
-        height: 105px;
+        height: 95px;
     }
     p.tile-text {
         font-size: 2rem;
@@ -20,14 +20,15 @@
     #contact {
         height: 100vh;
     }
-    div.contact-box {
-    margin-top: 425px;
-    }
     div.event {
         height: 400px;
+
     }
     div.event-text {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
+    }
+    h2.section-title {
+        margin-top: 10%;
     }
 }
 
@@ -272,9 +273,19 @@ p {
     padding: 4%;
     width: 40%;
     text-align: center;
+    position: relative;
+}
+.social-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: .5;
 }
 
-.contact-box {
+#contact-box {
     margin-top: 7%;
 }
 
@@ -282,6 +293,7 @@ p {
     color: #0c3769;
     padding: 10%;
     font-size: 1.5em;
+    z-index: 1;
 }
 
 /* footer */
