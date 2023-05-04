@@ -1,0 +1,298 @@
+/**********   TAG STYLES  ********************/
+a {
+    color: #FED2AA;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited {
+    color: none;
+}
+a:hover {
+    color: #eea764;
+    text-decoration: none;
+}
+body {
+    background-color: black;
+    color: #8FE3CF;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 8rem;
+    font-weight: 400;
+}
+h2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 5rem;
+        font-weight: 200; 
+        margin: 2.5% auto 1%;
+        width: 90%;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+hr {
+    width: 90%;
+    border-width: 3px;
+    margin: 0 auto;
+}
+p {
+    margin: 0;
+}
+
+/**********   CLASS STYLES  *****************/
+
+
+.section {
+    padding: 1% 0 10%;
+}
+.solid-section {
+    background-color: #256D85;
+}
+
+/* Background tree-line */
+.treeline-background {
+    background-color: #2B4865;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+}
+.treeline-image {
+    width: 100%;
+    height: 90%;
+
+}
+
+/* navbar */
+
+.logo {
+    margin-left: 15px;
+    height: 60px;
+}
+.navbar {
+    font-size: 1.5rem;
+}
+
+/* title section */
+
+#title-section {
+    text-align: center;
+    padding: 35vh 0 0 0;
+    height: 100vh;
+}
+
+/* About section */
+.about-row {
+    width: 100%;
+    display: inline-block;
+    margin: 50px auto;
+}
+.about-icon {
+    width: 15%;
+    float: left;
+    margin: 0 50px 10px 0;
+}
+
+#about-box {
+    width: 90%; 
+    height: 100%;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2;
+    margin: 3% auto;
+}
+#bonfire {
+    float: left;
+}
+#camp-icon {
+    float: right;
+    margin: 0 0 10px 50px;
+}
+ 
+/* Glamping Tiles */
+.tile-box {
+    border: 0px solid;
+    width: 70%;
+    margin: 5% auto;
+    text-align: center;
+    padding: 0 5% 5%;
+    box-shadow: 0px 0px 0px #8FE3CF;
+}
+.tile-box:hover {
+    color: #FED2AA;
+    box-shadow: 0px 0px 15px #FED2AA;
+}
+
+.tile-image {
+    height: 280px;
+    width: 365px;
+    margin: 5% auto;
+    border-radius: 10%;
+    box-shadow: 3px 2px 6px #8FE3CF;
+}
+.tile-text {
+    font-size: 1.5rem;
+}
+.tile-image:hover {
+    box-shadow: 6px 4px 10px #FED2AA;
+}
+
+/* Outdoor activities and Events */
+.carousel-image {
+    height: 550px;
+}
+.carousel-text {
+    margin: 0 0 3% 0;
+    padding: 1% 25% 0;
+    height: 90px;
+    text-align: center;
+}
+.carousel {
+    background-color: #175b72;
+}
+
+/* events section */
+.event-box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.event {
+ margin: 10px 0;
+ height: 200px;
+ opacity: 0.5;
+ position: relative;
+}
+
+.event-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20% 2%;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: -1px 1px 2px #000,
+    1px 1px 2px #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+.event-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.event:hover {
+    opacity: 1;
+}
+
+/* contact section */
+
+#contact {
+    text-align: center;
+    padding-top: 5%;
+} 
+
+.social-box {
+    background-color: #4f8a9e; 
+    margin: 0  auto; 
+    border-radius: 20%;
+    box-shadow: 2px 2px 3px;
+    padding: 5%;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+.social-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: .5;
+}
+
+.social-link {
+    color: #0c3769;
+    padding: 10%;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    /* height: 10vh; */
+    margin: 0 auto;
+    text-align: center;
+    /* padding-top: 3%; */
+}
+.copywrite {
+    padding: 1.5%;
+}
+
+/*******  MEDIA QUERIES  **********/
+@media (max-width: 990px) {
+    h2 {
+        margin-top: 10%;
+    }
+    a.nav-link {
+        font-size: 2.5rem;
+    }
+    img.logo {
+        height: 95px;
+    }
+    img.tile-image {
+        height: 384px;
+        width: 500px;
+        margin: 5% auto;
+        text-align: center;
+    }
+    p.tile-text {
+        font-size: 2rem;
+    }
+    img.treeline-image {
+        height: 40%;
+    }
+    div.carousel-text {
+        padding: 1% 5%;
+    }
+    #contact {
+        height: 100vh;
+    }
+    #contact-box {
+        margin-top: 500px;
+    }
+    div.social-box {
+        width: 70%;
+    }
+
+
+    /* div.event {
+        height: 400px;
+    } */
+    #events {
+        height: 100vh;
+    }
+
+    div.event-text {
+        font-size: 2.0rem;
+        padding: 10% 2%;
+    }
+}
