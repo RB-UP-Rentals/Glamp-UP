@@ -163,6 +163,10 @@ p {
 .carousel {
     background-color: #175b72;
 }
+#activity-carousel {
+    width: 90%;
+    margin: 0 auto;
+}
 
 /* events section */
 .event-box {
@@ -294,5 +298,8 @@ p {
     div.event-text {
         font-size: 2.0rem;
         padding: 10% 2%;
+    }
+    .carousel-text {
+        height: 150px;
     }
 }
